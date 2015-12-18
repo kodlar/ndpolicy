@@ -1,99 +1,608 @@
 <!DOCTYPE html>
-<html lang="en">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ND Sigorta</title>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Anasayfa | NDSigorta</title>
     <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
+    <meta name="viewport" content="width=device-width">
 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sl-slide.css">
+
+    <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head>
+
 <body>
 
-<!-- Fixed navbar -->
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">NDSigorta</a>
+    <!--Header-->
+    <header class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <a id="logo" class="pull-left" href="index.html"></a>
+                <div class="nav-collapse collapse pull-right">
+                    <ul class="nav">
+                        <li class="active"><a href="index.html">Anasayfa</a></li>
+                        <li><a href="about-us.html">Hakkımızda</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ürünler <i class="icon-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                 <li><a href="otomobil.html">Otomobil Sigortaları</a></li>
+                                <li><a href="ev.html">Ev Sigortaları</a></li>
+                                <li><a href="sorumluluk.html">Sorumluluk Sigortaları</a></li>
+                                <li><a href="is.html">İş Yeri Sigortaları</a></li>
+                                <li><a href="seyahat.html">Seyahat & Yat Sigortaları</a></li>
+                                <li><a href="bireysel.html">Bireysel Emeklilik</a></li>
+                                <li><a href="hayat.html">Hayat Sigortası</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="btn-primary"><a href="teklif-al.html">Teklif Al</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hızlı Erişim <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="https://www.allianzsigorta.com.tr/tr/hasar-islemleri/hasar-belgeleri" target="_blank">Hasar Belgeleri</a></li>
+                                <li><a href="http://allianzmerkez.bayiminternette.com.tr/upload/pdf/2014-ALLIANZ-KAZA-TESPIT-TUT.PDF" target="_blank">Kaza Tespit Tutanağı</a></li>
+                                <li><a href="https://www.dask.gov.tr/e-services/portal/calculatePremium" target="_blank">DASK Sigorta Primi ve Sigorta Bedeli Hesaplama</a></li>
+                                <li><a href="http://www.tsb.org.tr/kasko-deger-listesi.aspx?pageID=631" target="_blank">Kasko Değer Listesi</a></li>
+
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">İletişim</a></li>
+                        <li><img src="https://www.allianzsigorta.com.tr/v_1405893600000/media/logo-blau.gif" alt="AllianzSigorta" /> </li>
+
+
+                    </ul>        
+                </div><!--/.nav-collapse -->
+            </div>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Anasayfa</a></li>
-                <li><a href="Hakkimizda.html">Hakkımızda</a></li>
+    </header>
+    <!-- /header -->
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Ürünler <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Otomobil Sigortaları</a></li>
-                        <li><a href="#">Ev Sigortaları</a></li>
-                        <li><a href="#">Sorumluluk Sigortaları</a></li>
-                        <li><a href="#">İş Yeri Sigortaları</a></li>
-                        <li><a href="#">Seyahat & Yat Sigortaları</a></li>
-                        <li><a href="#">Bireysel Emeklilik</a></li>
-                        <li><a href="#">Hayat Sigortası</a></li>
-                    </ul>
-                </li>
-                <li><a href="Urunler.html">Teklif Al</a></li>
+    <!--Slider-->
+    <section id="slide-show">
+     <div id="slider" class="sl-slider-wrapper">
 
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Hızlı Erişim <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="https://www.allianzsigorta.com.tr/tr/hasar-islemleri/hasar-belgeleri" target="_blank">Hasar Belgeleri</a></li>
-                        <li><a href="http://allianzmerkez.bayiminternette.com.tr/upload/pdf/2014-ALLIANZ-KAZA-TESPIT-TUT.PDF" target="_blank">Kaza Tespit Tutanağı</a></li>
-                        <li><a href="https://www.dask.gov.tr/e-services/portal/calculatePremium" target="_blank">DASK Sigorta Primi ve Sigorta Bedeli Hesaplama</a></li>
-                        <li><a href="http://www.tsb.org.tr/kasko-deger-listesi.aspx?pageID=631" target="_blank">Kasko Değer Listesi</a></li>
+        <!--Slider Items-->    
+        <div class="sl-slider">
+            <!--Slider Item1-->
+            <div class="sl-slide item1" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                <div class="sl-slide-inner">
+                    <div class="container">
+                        <img class="pull-right" src="http://allianzmerkez.bayiminternette.com.tr/upload/images/25074c4f-a114-4a67-addf-b0b8e6f44008.jpg" alt="" />
+                        <!--<h2>Creative Ideas</h2>
+                        <h3 class="gap">Tincidunt condimentum eros</h3>
+                        <a class="btn btn-large btn-transparent" href="#">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
+            <!--/Slider Item1-->
 
-                    </ul>
-                </li>
-                <li><a href="Urunler.html">İletişim</a></li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="https://www.allianzsigorta.com.tr/tr/" target="_blank"><img src="http://www.ermissigorta.com.tr/images/logo-blau.gif" /></a></li>
-                <!--<li><a href="../navbar-static-top/">Static top</a></li>
-                <li class="active"><a href="./">Fixed top <span class="sr-only">(current)</span></a></li>-->
-            </ul>
-        </div><!--/.nav-collapse -->
+            <!--Slider Item2-->
+            <div class="sl-slide item2" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                <div class="sl-slide-inner">
+                    <div class="container">
+                        <img class="pull-right" src="http://allianzmerkez.bayiminternette.com.tr/upload/images/3399f3ba-0b07-4dc4-a2f4-ab9e84a607e0.jpg" alt="" />
+                       <!-- <h2>Planning &amp; Analysis</h2>
+                        <h3 class="gap">Aenean ultricies mi vitast</h3>
+                        <a class="btn btn-large btn-transparent" href="#">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
+            <!--Slider Item2-->
+
+            <!--Slider Item3-->
+            <div class="sl-slide item3" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+                <div class="sl-slide-inner">
+                   <div class="container">
+                    <img class="pull-right" src="http://allianzmerkez.bayiminternette.com.tr/upload/images/2274a6b2-9572-41d6-ac98-05b6e64fd463.jpg" alt="" />
+                    <!--<h2>Unique Solutions</h2>
+                    <h3 class="gap">Breatures who have been utterly</h3>
+                    <a class="btn btn-large btn-transparent" href="#">Learn More</a>-->
+                </div>
+            </div>
+        </div>
+        <!--Slider Item3-->
+
+            <!--Slider Item4-->
+            <div class="sl-slide item4" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                <div class="sl-slide-inner">
+                    <div class="container">
+                        <img class="pull-right" src="http://allianzmerkez.bayiminternette.com.tr/upload/images/0d9770a9-06c6-45cb-bbc4-1ec6a026017e.jpg" alt="" />
+                        <!-- <h2>Planning &amp; Analysis</h2>
+                         <h3 class="gap">Aenean ultricies mi vitast</h3>
+                         <a class="btn btn-large btn-transparent" href="#">Learn More</a>-->
+                    </div>
+                </div>
+            </div>
+            <!--Slider Item4-->
+
+
     </div>
-</nav>
+    <!--/Slider Items-->
 
-<div class="container">
+    <!--Slider Next Prev button-->
+    <nav id="nav-arrows" class="nav-arrows">
+        <span class="nav-arrow-prev"><i class="icon-angle-left"></i></span>
+        <span class="nav-arrow-next"><i class="icon-angle-right"></i></span> 
+    </nav>
+    <!--/Slider Next Prev button-->
 
-    <!-- Main component for a primary marketing message or call to action -->
-    <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-            <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
+</div>
+<!-- /slider-wrapper -->           
+</section>
+<!--/Slider-->
+
+<section class="main-info">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span9">
+                <h4>
+                     ND Sigorta Allianz Sigorta hizmetleri hakkında detaylı bilgi almak için
+                    </h4>
+                <p class="no-margin">Müşterilerimizin sağlıklarını, yıllar boyunca oluşturdukları varlıklarını korumak, hayatlarının tüm evrelerinde kendilerinin ve ailelerinin yanında olmak için varız.
+                    ND Sigorta, Allianz Sigorta bayisi olarak Otomobil sigortası (Kasko), sağlık sigortası, ev sigortası ve işyeri sigortası alanlarında faaliyet göstermekteyiz. </p>
+            </div>
+            <div class="span3">
+                <a class="btn btn-success btn-large pull-right" href="teklif-al.html">Teklif Alın</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Services-->
+<section id="services">
+    <div class="container">
+        <div class="center gap">
+            <h3>Size Teklifimiz</h3>
+            <p class="lead">Değerli müşterilerimize sunduğumuz fırsatlar</p>
+        </div>
+
+        <div class="row-fluid">
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-globe icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Otomobil Sigortaları</h4>
+                        <p>Allianz, 70'ten fazla ülkedeki geniş deneyimi, Türkiye'deki 25 yılı aşkın birikimiyle her koşulda, her zaman yanınızda. Allianz aracınızın başına gelebilecek birçok riski Tüm Oto Genişletilmiş Kasko Sigortası ile teminat altına alıyor.
+                        </p>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-thumbs-up-alt icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Ev Sigortaları</h4>
+                        <p>Allianz ile güç yanınızda!
+                            70'ten fazla ülkedeki geniş deneyimi, Türkiye'deki 25 yılı aşkın birikimiyle her koşulda, her zaman yanınızda olan Allianz hem ev sahiplerinin, hem de kiracıların rahatlıkla yararlanabileceği, uygun fiyatlar ile geniş teminatlı bir güvence sunuyor: Tüm Ev Sigortası.</p>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-leaf icon-medium icon-rounded"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Sorumluluk Sigortaları</h4>
+                        <p>Günümüzde gittikçe yaygınlaşan sorumluluk bilinci, profesyonel sorumluluk sigortalarının diğer sigorta branşları gibi önem kazanmasını beraberinde getirmiştir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gap"></div>
+
+        <div class="row-fluid">
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-shopping-cart icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">İş Yeri Sigortaları</h4>
+                        <p>Allianz 70'ten fazla ülkedeki geniş deneyimi, Türkiye'deki 25 yılı aşkın birikimiyle her koşulda, her zaman yanınızda. Şimdi işyerinize, en küçük bir zarar bile gelmemesi için Tüm İşyeri Sigortası var.</p>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-globe icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Seyahat & Yat Sigortaları</h4>
+                        <p>Allianz, 70'ten fazla ülkedeki geniş deneyimi, Türkiye'deki 25 yılı aşkın birikimiyle her koşulda, her zaman yanınızda. Artık Seyahat Sağlık Sigortası ile seyahatiniz boyunca güvence altındasınız.</p>
+                    </div>
+                </div>
+            </div>            
+
+            <div class="span4">
+                <div class="media">
+                    <div class="pull-left">
+                        <i class="icon-globe icon-medium"></i>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">Bireysel Emeklilik ve Hayat Sigortası</h4>
+                        <p>Hepimiz emekliliğimiz için önümüzde uzun yıllar olduğunu düşünürüz.
+
+                            Yoğun çalışma tempomuzda çoğu zaman emekliliğimizi aklımıza getirmeyiz. Hayatımızın ortalama 25 ile 30 yılını çalışarak geçiriyoruz. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--/Services-->
+<!--
+<section id="recent-works">
+    <div class="container">
+        <div class="center">
+            <h3>Our Recent Works</h3>
+            <p class="lead">Look at some of the recent projects we have completed for our valuble clients</p>
+        </div>  
+        <div class="gap"></div>
+        <ul class="gallery col-4">
+            <!--Item 1--
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/item1.jpg">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-1"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                          
+                    </div>
+                </div>
+                <div class="desc">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                </div>
+                <div id="modal-1" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/item1.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 1--
+
+            <!--Item 2--
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/item2.jpg">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-1"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                                
+                    </div>
+                </div>
+                <div class="desc">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                </div>
+                <div id="modal-1" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/item2.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 2--
+
+            <!--Item 3--
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/item3.jpg">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-3"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                                
+                    </div>
+                </div>
+                <div class="desc">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                </div>
+                <div id="modal-3" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/item3.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 3--
+
+            <!--Item 4--
+            <li>
+                <div class="preview">
+                    <img alt=" " src="images/portfolio/thumb/item4.jpg">
+                    <div class="overlay">
+                    </div>
+                    <div class="links">
+                        <a data-toggle="modal" href="#modal-4"><i class="icon-eye-open"></i></a><a href="#"><i class="icon-link"></i></a>                                
+                    </div>
+                </div>
+                <div class="desc">
+                    <h5>Lorem ipsum dolor sit amet</h5>
+                </div>
+                <div id="modal-4" class="modal hide fade">
+                    <a class="close-modal" href="javascript:;" data-dismiss="modal" aria-hidden="true"><i class="icon-remove"></i></a>
+                    <div class="modal-body">
+                        <img src="images/portfolio/full/item4.jpg" alt=" " width="100%" style="max-height:400px">
+                    </div>
+                </div>                 
+            </li>
+            <!--/Item 4--
+
+        </ul>
     </div>
 
-</div> <!-- /container -->
+</section>
+    -->
+<!--
+<section id="clients" class="main">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span2">
+                <div class="clearfix">
+                    <h4 class="pull-left">OUR PARTNERS</h4>
+                    <div class="pull-right">
+                        <a class="prev" href="#myCarousel" data-slide="prev"><i class="icon-angle-left icon-large"></i></a> <a class="next" href="#myCarousel" data-slide="next"><i class="icon-angle-right icon-large"></i></a>
+                    </div>
+                </div>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+            <div class="span10">
+                <div id="myCarousel" class="carousel slide clients">
+                  !-- Carousel items --
+                  <div class="carousel-inner">
+                    <div class="active item">
+                        <div class="row-fluid">
+                            <ul class="thumbnails">
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-<!-- Bootstrap core JavaScript
-   ================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-<script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
-<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-<script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+                    <div class="item">
+                        <div class="row-fluid">
+                            <ul class="thumbnails">
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
 
-<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" rel="script">-->
+                    <div class="item">
+                        <div class="row-fluid">
+                            <ul class="thumbnails">
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client1.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client2.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client3.png"></a></li>
+                                <li class="span3"><a href="#"><img src="images/sample/clients/client4.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                !-- /Carousel items --
+
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+-->
+<!--Bottom-->
+<section id="bottom" class="main">
+    <!--Container-->
+    <div class="container">
+
+        <!--row-fluids-->
+        <div class="row-fluid">
+
+            <!--Contact Form-->
+            <div class="span3">
+                <h4>ADRES</h4>
+                <ul class="unstyled address">
+                    <li>
+                        <i class="icon-home"></i><strong>Adres:</strong> Halide Edip Adıvar mah. Bahçecik 1 Sok. 15-17 A Şişli - İstanbul
+                    </li>
+                    <li>
+                        <i class="icon-envelope"></i>
+                        <strong>Email: </strong> unzule.korkut@ndsigorta.net
+                    </li>
+                    <!--<li>
+                        <i class="icon-globe"></i>
+                        <strong>Website:</strong> www.domain.com
+                    </li>-->
+                    <li>
+                        <i class="icon-phone"></i>
+                        <strong>Telefon:</strong> 0536 000 00 00
+                    </li>
+                </ul>
+            </div>
+            <!--End Contact Form-->
+
+            <!--Important Links-->
+            <div id="tweets" class="span3">
+                <h4>Allianz Websiteleri</h4>
+                <div>
+                    <ul class="arrow">
+                        <li><a href="https://www.allianzsigorta.com.tr/">Allianz Sigorta A.Ş.</a></li>
+                        <li><a href="https://www.allianzemeklilik.com.tr/tr/">Allianz Hayat ve Emeklilik A.Ş.</a></li>
+                        <li><a href="http://www.allianzyasamemeklilik.com.tr/">Allianz Yaşam ve Emeklilik A.Ş.</a></li>
+
+                    </ul>
+                </div>  
+            </div>
+            <!--Important Links-->
+
+            <!--Archives-->
+            <div id="archives" class="span3">
+               <h4>Hızlı Erişim</h4>
+                <div>
+                    <ul class="arrow">
+                        <li><a target="_blank" href="https://www.allianzsigorta.com.tr/tr/hasar-islemleri/hasar-belgeleri">Hasar Belgeleri</a></li>
+                        <li><a target="_blank" href="http://allianzmerkez.bayiminternette.com.tr/upload/pdf/2014-ALLIANZ-KAZA-TESPIT-TUT.PDF">Kaza Tespit Tutanağı</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--End Archives-->
+
+            <div class="span3">
+                <!--  <h4>FLICKR GALLERY</h4>
+               <div class="row-fluid first">
+                <ul class="thumbnails">
+                     <li class="span3">
+                       <a href="http://www.flickr.com/photos/76029035@N02/6829540293/" title="01 (254) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7003/6829540293_bd99363818_s.jpg" width="75" height="75" alt="01 (254)"></a>
+                   </li>
+                   <li class="span3">
+                       <a href="http://www.flickr.com/photos/76029035@N02/6829537417/" title="01 (196) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7013/6829537417_465d28e1db_s.jpg" width="75" height="75" alt="01 (196)"></a>
+                   </li>
+                   <li class="span3">
+                       <a href="http://www.flickr.com/photos/76029035@N02/6829527437/" title="01 (65) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7021/6829527437_88364c7ec4_s.jpg" width="75" height="75" alt="01 (65)"></a>
+                   </li>
+                   <li class="span3">
+                       <a href="http://www.flickr.com/photos/76029035@N02/6829524451/" title="01 (6) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7148/6829524451_a725793358_s.jpg" width="75" height="75" alt="01 (6)"></a>
+                   </li>
+               </ul>
+            </div>
+           <div class="row-fluid">
+                <ul class="thumbnails">
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829524451/" title="01 (6) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7148/6829524451_a725793358_s.jpg" width="75" height="75" alt="01 (6)"></a>
+                    </li>
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829540293/" title="01 (254) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7003/6829540293_bd99363818_s.jpg" width="75" height="75" alt="01 (254)"></a>
+                    </li>
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829537417/" title="01 (196) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7013/6829537417_465d28e1db_s.jpg" width="75" height="75" alt="01 (196)"></a>
+                    </li>
+                    <li class="span3">
+                        <a href="http://www.flickr.com/photos/76029035@N02/6829527437/" title="01 (65) by Victor1558, on Flickr"><img src="http://farm8.staticflickr.com/7021/6829527437_88364c7ec4_s.jpg" width="75" height="75" alt="01 (65)"></a>
+                    </li>
+                </ul>
+            </div>-->
+
+        </div>
+
+    </div>
+    <!--/row-fluid-->
+</div>
+<!--/container-->
+
+</section>
+<!--/bottom-->
+
+<!--Footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span5 cp">
+                &copy; 2015 ND Sigorta. Her hakkı saklıdır.
+            </div>
+            <!--/Copyright-->
+
+            <div class="span6">
+                <ul class="social pull-right">
+                  <!--  <li><a href="#"><i class="icon-facebook"></i></a></li>
+                    <li><a href="#"><i class="icon-twitter"></i></a></li>
+                    <li><a href="#"><i class="icon-pinterest"></i></a></li>
+                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
+                    <li><a href="#"><i class="icon-google-plus"></i></a></li>                       
+                    <li><a href="#"><i class="icon-youtube"></i></a></li>
+                    <li><a href="#"><i class="icon-tumblr"></i></a></li>                        
+                    <li><a href="#"><i class="icon-dribbble"></i></a></li>
+                    <li><a href="#"><i class="icon-rss"></i></a></li>
+                    <li><a href="#"><i class="icon-github-alt"></i></a></li>
+                    <li><a href="#"><i class="icon-instagram"></i></a></li>     -->
+                </ul>
+            </div>
+
+            <div class="span1">
+                <a id="gototop" class="gototop pull-right" href="#"><i class="icon-angle-up"></i></a>
+            </div>
+            <!--/Goto Top-->
+        </div>
+    </div>
+</footer>
+<!--/Footer-->
+
+
+
+<script src="js/vendor/jquery-1.9.1.min.js"></script>
+<script src="js/vendor/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!-- Required javascript files for Slider -->
+<script src="js/jquery.ba-cond.min.js"></script>
+<script src="js/jquery.slitslider.js"></script>
+<!-- /Required javascript files for Slider -->
+
+<!-- SL Slider -->
+<script type="text/javascript"> 
+$(function() {
+    var Page = (function() {
+
+        var $navArrows = $( '#nav-arrows' ),
+        slitslider = $( '#slider' ).slitslider( {
+            autoplay : true
+        } ),
+
+        init = function() {
+            initEvents();
+        },
+        initEvents = function() {
+            $navArrows.children( ':last' ).on( 'click', function() {
+                slitslider.next();
+                return false;
+            });
+
+            $navArrows.children( ':first' ).on( 'click', function() {
+                slitslider.previous();
+                return false;
+            });
+        };
+
+        return { init : init };
+
+    })();
+
+    Page.init();
+});
+</script>
+<!-- /SL Slider -->
 </body>
 </html>
